@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Qual seu país de origem: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="pesquisar()">
+    <div id="res"></div>
+    <script>
+        function pesquisar(){
+           var txtnac = window.document.querySelector('#txtnac')
+           var res = window.document.querySelector('#res')
+           var nac = String(txtnac.value)
+           
+           res.innerHTML = `<p> Você é <strong>${nac}</strong></p>`
+           if(nac == 'Brasil') {
+            res.innerHTML = `Você é <strong>Brasileiro!</strong>`
+           }else{
+            res.innerHTML = `Você é <strong>estrangeiro"</strong>`
+           }
+           
+           
+         
+        }
+    </script>
+</body>
+</html>
