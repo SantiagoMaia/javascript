@@ -1,0 +1,39 @@
+@charset "utf-8";
+body{
+    font: normal 15pt arial;
+    background-color: rgb(160, 107, 209);
+}
+header{
+    color: white;
+    text-align: center;
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.349);
+}
+section{
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.459);
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+img{
+    display: block;
+    width: 200px ;
+    margin: auto;
+}
+
+footer{
+    font-size: 12pt;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin: 5px;   
+}
+footer p a {
+    color: white;
+    text-decoration: none;
+}
